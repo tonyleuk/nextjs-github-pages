@@ -1,9 +1,7 @@
 'use client';
 
-import Image from "next/image";
-import { motion } from 'motion/react';
-
 import Letter from './letter';
+import { motion } from 'motion/react';
 import { Suspense } from "react";
 
 export default function Home() {
@@ -17,10 +15,7 @@ export default function Home() {
         transition={{ duration: 2, ease: 'easeOut' }}
         >
           <Letter
-            src="/images/photo.jpg"
-            alt="Example"
-            title="This is a title"
-            description="This is a description under the image."
+            src="/images/lettermagic.png"
           />
         </motion.div>
       </main>

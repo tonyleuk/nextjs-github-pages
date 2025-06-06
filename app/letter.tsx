@@ -7,9 +7,6 @@ import { useSearchParams } from 'next/navigation';
 
 interface ImageWithTextProps {
   src: string;
-  alt: string;
-  title: string;
-  description: string;
 }
 
 const transition = {
@@ -18,7 +15,7 @@ const transition = {
     ease: 0,
 }
 
-const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, title, description }) => {
+const ImageWithText: React.FC<ImageWithTextProps> = ({ src }) => {
     const searchParams = useSearchParams();
     const name = searchParams.get('name') || '';
   return (
@@ -28,7 +25,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, title, descript
       
       {/* --- Layer 1: Background Image --- */}
       <Image
-        src="/DigitalLetter/images/lettermagic.png"
+        src={src}
         alt="Background Image"
         fill
         className="object-cover z-10"
@@ -45,7 +42,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, title, descript
       >
         <div className="relative">
             <Image
-            src="/DigitalLetter/images/letter.jpg"
+            src="/images/letter.jpg"
             alt="Middle Image"
             width={400}
             height={400}
@@ -62,7 +59,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ src, alt, title, descript
 
       {/* --- Layer 3: Video Overlay --- */}
       <video
-        src="/DigitalLetter/images/letter.webm"
+        src="/images/letter.webm"
         autoPlay
         muted
         playsInline
