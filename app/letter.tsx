@@ -42,7 +42,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ src }) => {
       >
         <div className="relative">
             <Image
-            src="/images/letter.jpg"
+            src="/nextjs-github-pages/images/letter.jpg"
             alt="Middle Image"
             width={400}
             height={400}
@@ -59,7 +59,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ src }) => {
 
       {/* --- Layer 3: Video Overlay --- */}
       <video
-        src="/images/letter.webm"
+        src="/nextjs-github-pages/images/letter.webm"
         autoPlay
         muted
         playsInline

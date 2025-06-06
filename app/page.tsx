@@ -15,7 +15,7 @@ export default function Home() {
         transition={{ duration: 2, ease: 'easeOut' }}
         >
           <Letter
-            src="/images/lettermagic.png"
+            src="/nextjs-github-pages/images/lettermagic.png"
           />
         </motion.div>
       </main>
